@@ -1,0 +1,69 @@
+HTTP 1.1
+1️⃣ HTTP 1.1 was first standardized in 1999.
+
+2️⃣Multiplexing
+✔A client can request a server in single way, which means only one request can be sent at a time over a single connection.
+✔Data Load will be slow compared to HTTP 2.
+
+3️⃣Header Compression
+✔Headers are not compressed.
+✔It can result in significant overhead, even for small requests.
+
+4️⃣Binary Protocol
+✔It uses a plain text format, which is human-readable.
+✔but it less efficient for parsing by machines.
+
+5️⃣Server Push
+✔Does not support server push.
+✔This server can't send additional resources to the client until requested.
+
+6️⃣Prioritization
+✔There is no Inbuilt support request prioritization.
+✔All requests are treated equally.
+
+7️⃣Connection Handling
+✔It Requires multiple connections to load multiple resources.
+✔It can be resource-intensive and less efficient.
+
+8️⃣Adoption
+✔Widespread and well-established, used by most websites until the adoption of HTTP 2.
+
+9️⃣Security
+✔Both HTTP 1.1 and HTTP 2 can be used over secure connections (HTTPS), and the security features are generally similar between the two.
+
+
+HTTP 2.0
+1️⃣HTTP 2.0 was first standardized in 2015.
+
+2️⃣Multiplexing
+✔A client can request to the server in multiple ways of resource in single TCP connection, 
+in which parallel request will be going into server using single tcp connection.
+✔Data Load will be Faster compared to HTTP 1.1
+
+3️⃣Header Compression
+✔Headers are compressed, Header compression is called as HPACK.
+✔It Reduces the size of Header.
+✔It makes a request & responses more efficient, even Big request made compared to 1.0
+
+4️⃣Binary Protocol
+✔It uses a binary format for the payload.
+✔It is more efficient for parsing and processing by machines.
+
+5️⃣Server Push
+✔It Supports server push.
+✔It allows the server to send additional resources to the client before the client requests them.
+✔This reduces the need for multiple round trips and speeds up page loading.
+
+6️⃣Prioritization
+✔It Supports request prioritization.
+✔It allows clients to indicate the importance of various resources, which helps optimize loading critical resources first.
+
+7️⃣Connection Handling
+✔Uses a single, multiplexed connection,
+✔It reducing the overhead of establishing and maintaining multiple connections.
+
+8️⃣Adoption
+✔Adoption is increasing, especially among major websites and content delivery networks (CDNs).
+
+9️⃣Security
+✔Both HTTP 2 and HTTP 1.1 can be used over secure connections (HTTPS), and the security features are generally similar between the two.
